@@ -1,78 +1,121 @@
+/**#include <iostream>
+#include <string>
+#include <cmath>**/
+
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <iomanip>
 
 using namespace std;
-int M(string input, int month)
+
+int days(int day);
+
+int M(string M, int month);
+
 int main() {
-  int n, d, month_i;
-  string month;
+  int n;//number of classmates
+  int day; //day you were born on
+  int month_i;//moth to number
+  int M,days;
+  //string M; // month you were born**/
+  
+  /**int month;
+int day; 
+int n;
+string input;**/
+
   
   cout << "Enter number of classmates:"<<endl;
   cin>>n;
 
-  for(int i; i<n; i++)
+  
+  
+  for(int i=0; i<n; i++)
     {
-      cout<<"Enter the day you were born: ";
-      cin>>d;
-      cout<<"Enter the Month you were born: ";
-      cin>> month; 
+      day = days;
+      month_i = M ;
+        
       
       
-    }  
-  int M(string input, int month)
+     
+      
+      
+    } 
+  }
+  
+
+  //day input
+  int days(int day)
   {
-    cin>> month;
-    if (input == Jan)
+    cin>>day;
+   
+    return day;
+    
+    }
+  //month input
+  int M(string M, int month_i)
+  {
+    cin>> M;
+    
+    if (M == "Jan")
     {
       month_i = 1;
       }
-    if (input == Feb)
+    if (M == "Feb")
     {
       month_i = 2;
       }
-    if (input == Mar)
+    if (M == "Mar")
     {
       month_i = 3;
       }
-    if (input == Apr)
+    if (M == "Apr")
     {
       month_i = 4;
       }
-    if (input == May)
+    if (M == "May")
     {
       month_i = 5;
       }
-    if (input == Jan)
+    if (M == "Jun")
     {
-      month_i = 1;
+      month_i = 6;
       }
-    if (input == Jan)
+    if (M== "Jul")
     {
-      month_i = 1;
+      month_i = 7;
       }
-    if (input == Jan)
+    if (M == "Aug")
     {
-      month_i = 1;
+      month_i = 8;
       }
-    if (input == Jan)
+    if (M == "Sep")
     {
-      month_i = 1;
+      month_i = 9;
       }
-    if (input == Jan)
+    if (M == "Oct")
     {
-      month_i = 1;
+      month_i = 10;
       }
-    if (input == Jan)
+    if (M == "Nov")
     {
-      month_i = 1;
+      month_i = 11;
       }
-    if (input == Jan)
+    if (M == "Dec")
     {
-      month_i = 1;
+      month_i = 12;
       }
+cout<<"month"<<month_i<<endl;
     
-    
-  }
+    }
+
   
-}
+  /**int A(int month_i, int day)
+  {
+    switch(month)
+  }
+**/
+  
