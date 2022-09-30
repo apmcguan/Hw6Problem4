@@ -12,13 +12,14 @@
 using namespace std;
 
 int days(int d);
-
-int M(string M, int m);
+int Mo(string M, int m);
+int A(int m, int d);
 
 int main() {
   int n;//number of classmates
   int d; //day you were born on
   int m;//moth to number
+  int a;//astrology
   string M;
 
   
@@ -36,7 +37,8 @@ string input;**/
   for(int i = 0; i < n; i++)
     {
     d = days(d);
-      m = M (M, m);
+      m = Mo(M, m);
+      a= A(m, d);
     
 
       
@@ -54,7 +56,7 @@ string input;**/
     
     }
   //month input
-  int M (string M, int m)
+  int Mo (string M, int m)
   {
     cin>> M;
     
@@ -105,8 +107,10 @@ string input;**/
     if (M == "Dec")
     {
       m = 12;
+      
       }
     
+    return m;
     }
 
   
@@ -207,6 +211,6 @@ return m;
         
       }
     
-  }
+  
 
   
